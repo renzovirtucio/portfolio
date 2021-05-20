@@ -26,9 +26,9 @@ const App = () => {
                     <Route path='/credentials'>
                         <Credentials />
                     </Route>
-                    <Route path='/gallery'>
+                    {/* <Route path='/gallery'>
                         <Gallery />
-                    </Route>
+                    </Route> */}
                 </Switch>
             </Router>
             <div style={{marginTop: '200px'}}></div>

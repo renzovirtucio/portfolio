@@ -6,168 +6,32 @@ import { useEffect } from 'react'
 const TITLE = 'Credentials | Renzo Virtucio'
 
 const Education = () => {
-    const { height, width } = useWindowDimensions()
     return (
         <div>
-            <Header
-                as='h1'
-                style={{marginBottom:0}}
-            >
-                Bachelor of Science in Computer Science
-            </Header>
-            <Header
-                as='h3'
-                style={{marginTop:'0.20em', marginBottom:0}}
-            >
-                University of the Philippines Diliman, Quezon City
-            </Header>
-            <p style={{ fontSize: (width < 768) ? '16px' : '16px', marginTop: '0.20em'}}>August 2018 – Present</p>
-            
-            <Header
-                as='h3'
-                style={{marginBottom:0 }}
-            >
-                Relevant Coursework
-            </Header>
-            <p style={{ fontSize: (width < 768) ? '16px' : '16px'}}>Software Engineering, Artificial Intelligence, Computer Programming, Data Structures and Algorithms, Computer Organization and Architecture, Database Systems</p>
-        </div>
-    )
-}
-
-const Skills = () => {
-    return (
-        <div>
-            <Grid columns='equal' stackable>
-                <Grid.Row>
-                    <Grid.Column>
-                        <Header
-                            as='h1'
-                        >
-                            Technical Skills
-                        </Header>
-                        <List bulleted>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Proficient in <strong>Python</strong>, <strong>C</strong>, and <strong>C++</strong>.
-                                </List.Content>
-                            </List.Item>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Experienced in Database Systems using <strong>MySQL</strong>.
-                                </List.Content>
-                            </List.Item>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Has working knowledge on Front-End Web Development using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React JS</strong>.
-                                </List.Content>
-                            </List.Item>
-                        </List>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Header
-                            as='h1'
-                        >
-                            Soft Skills
-                        </Header>
-                        <Label.Group size='large' color='teal'>
-                            <Label>Teamwork</Label>
-                            <Label>Communication</Label>
-                            <Label>Organization</Label>
-                            <Label>Problem Solving</Label>
-                        </Label.Group>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-        </div>
-    )
-}
-
-const Projects = () => {
-    return (
-        <div>
-            <Card.Group centered>
-                <Card as='a' href='https://github.com/CS-192-S3-2020-2021-Group-2/Post-Apocalyptic-Survival-Game' target='_blank' rel='noreferrer nofollow'>
-                    <Card.Content>
-                        <Card.Header><Header>Post-Apocalyptic Survival Game</Header></Card.Header>
-                        <Card.Meta>March 2021 – Present</Card.Meta>
-                        <Card.Description>A simple text-based game which allows the player to decide their own outcome by the choices they make.</Card.Description>
-                    </Card.Content>
-                    <Card.Content extra>
-                        <Icon name='keyboard outline' /> Python
-                    </Card.Content>
-                </Card>
-                <Card>
-                    <Card.Content>
-                        <Card.Header><Header>Multiplayer Chopsticks Game</Header></Card.Header>
-                        <Card.Meta>May 2019 – June 2019</Card.Meta>
-                        <Card.Description>An object-oriented program of the turn-based hand game which allows for multiplayer gameplay over a local area network.</Card.Description>
-                    </Card.Content>
-                    <Card.Content extra>
-                        <Icon name='keyboard outline' /> C++
-                    </Card.Content>
-                </Card>
-            </Card.Group>
-        </div>
-    )
-}
-
-const Extracurricular = () => {
-    const { height, width } = useWindowDimensions()
-    return (
-        <div>
-            <Grid columns='equal' stackable divided={((width < 768) ? false : true)}>
+            <Grid celled='internally' stackable>
                 <Grid.Row>
                     <Grid.Column width={10}>
                         <Header
                             as='h1'
                             style={{marginBottom:0}}
                         >
-                            Vice President for Service
+                            Bachelor of Science in Computer Science
                         </Header>
                         <Header
                             as='h3'
                             style={{marginTop:'0.20em', marginBottom:0}}
                         >
-                            UP Center for Student Innovations
+                            University of the Philippines Diliman, Quezon City
                         </Header>
-                        <p style={{ fontSize: '16px', marginTop: '0.20em'}}>June 2020 – Present</p>
-                        <List bulleted>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Mentored for a project on UP Circle of Industrial Engineering Majors website update, ensuring timely completion.
-                                </List.Content>
-                            </List.Item>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Finalized the Developer's Memorandum of Agreement template to ensure delivery of project requirements and necessary disclosures to developers.
-                                </List.Content>
-                            </List.Item>
-                        </List>
+                        <p style={{ fontSize: '16px', marginTop: '0.20em'}}>August 2018 – Present</p>
+                        
                         <Header
-                            as='h1'
+                            as='h3'
                             style={{marginBottom:0}}
                         >
-                            Project Manager
+                            Relevant Coursework
                         </Header>
-                        <Header
-                            as='h3'
-                            style={{marginTop:'0.20em', marginBottom:0}}
-                        >
-                            UP Center for Student Innovations
-                        </Header>
-                        <p style={{ fontSize: '16px', marginTop: '0.20em'}}>December 2019 – March 2020</p>
-                        <List bulleted>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Negotiated and finalized an agreement with the Client for a 3-month-long web development project.
-                                </List.Content>
-                            </List.Item>
-                            <List.Item>
-                                <List.Content style={{fontSize: '16px'}}>
-                                    Effectively coordinated a team of 2 developers resulting in an on-time project completion.
-                                </List.Content>
-                            </List.Item>
-                        </List>
+                        <p style={{ fontSize: '16px'}}>Software Engineering, Database Systems, Computer Programming, Data Structures and Algorithms, Artificial Intelligence</p>
                     </Grid.Column>
                     <Grid.Column width={6}>
                         <Header
@@ -189,7 +53,167 @@ const Extracurricular = () => {
                                 </Header>
                                 <p style={{ fontSize: '16px', marginTop: '0.20em'}}>January 2019 – Present</p>
                             </List.Item>
-                        </List>     
+                        </List>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+        </div>
+    )
+}
+
+const Skills = () => {
+    return (
+        <div>
+            <Grid columns='equal' stackable celled='internally'>
+                <Grid.Row>
+                    <Grid.Column>
+                        <Header as='h1'>
+                            Technical Skills
+                        </Header>
+                        <List bulleted>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Proficient in <strong>Python</strong>, <strong>C</strong>, and <strong>C++</strong>.
+                                </List.Content>
+                            </List.Item>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Has working knowledge on Front-End Web Development using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React JS</strong>.
+                                </List.Content>
+                            </List.Item>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Has basic knowledge in Database Systems using <strong>MySQL</strong>.
+                                </List.Content>
+                            </List.Item>
+                        </List>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Header as='h1'>
+                            Soft Skills
+                        </Header>
+                        <Label.Group size='large' color='teal'>
+                            <Label>Project Management</Label>
+                            <Label>Teamwork</Label>
+                            <Label>Communication</Label>
+                            <Label>Organization</Label>
+                            <Label>Problem Solving</Label>
+                        </Label.Group>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+        </div>
+    )
+}
+
+const Projects = () => {
+    return (
+        <div>
+            <Grid>
+                <Grid.Row>
+                    <Grid.Column>
+                        <Card as='a' centered fluid href='https://github.com/CS-192-S3-2020-2021-Group-2/Post-Apocalyptic-Survival-Game' target='_blank' rel='noreferrer nofollow'>
+                            <Card.Content>
+                                <Card.Header><Header>Post-Apocalyptic Survival Game</Header></Card.Header>
+                                <Card.Meta>March 2021 – Present</Card.Meta>
+                                <Card.Description>A simple text-based game which allows the player to decide their own outcome by the choices they make.</Card.Description>
+                            </Card.Content>
+                            <Card.Content extra>
+                                <Icon name='keyboard outline' /> Python
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column>
+                        <Card centered fluid>
+                            <Card.Content>
+                                <Card.Header><Header>Multiplayer Chopsticks Game</Header></Card.Header>
+                                <Card.Meta>May 2019 – June 2019</Card.Meta>
+                                <Card.Description>An object-oriented program of the turn-based hand game which allows for multiplayer gameplay over a local area network.</Card.Description>
+                            </Card.Content>
+                            <Card.Content extra>
+                                <Icon name='keyboard outline' /> C++
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+        </div>
+    )
+}
+
+const Extracurricular = () => {
+    return (
+        <div>
+            <Grid columns='equal' stackable celled='internally'>
+                <Grid.Row>
+                    <Grid.Column width={6}>
+                        <a href='https://www.facebook.com/upcsi/' target='_blank' rel='noreferrer nofollow'>
+                        <Header as='h1' style={{marginBottom:0}}>
+                            UP Center for Student Innovations
+                        </Header>
+                        </a>
+                        <Header as='h2' style={{marginBottom:0, marginTop:0}}>
+                            (UP CSI)
+                        </Header>
+                        <p style={{ fontSize: '16px', marginTop: '0.20em', marginBottom: 0}}>January 2019 – Present</p>    
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+                        <Header
+                            as='h2'
+                            style={{marginBottom:0}}
+                        >
+                            Vice President for Service
+                        </Header>
+                        <p style={{ fontSize: '16px', marginTop: '0.20em', marginBottom: 0}}>June 2020 – Present</p>
+                        <List bulleted>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Mentored for a project on UP Circle of Industrial Engineering Majors website update, ensuring timely completion.
+                                </List.Content>
+                            </List.Item>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Finalized the Developer's Memorandum of Agreement template to ensure delivery of project requirements and necessary disclosures to developers.
+                                </List.Content>
+                            </List.Item>
+                        </List>
+                        <Header
+                            as='h2'
+                            style={{marginBottom:0}}
+                        >
+                            Project Manager
+                        </Header>
+                        <p style={{ fontSize: '16px', marginTop: '0.20em', marginBottom: 0}}>December 2019 – March 2020</p>
+                        <List bulleted>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Negotiated and finalized an agreement with the Client for a 3-month-long web development project.
+                                </List.Content>
+                            </List.Item>
+                            <List.Item>
+                                <List.Content style={{fontSize: '16px'}}>
+                                    Effectively coordinated a team of 2 developers resulting in an on-time project completion.
+                                </List.Content>
+                            </List.Item>
+                        </List>
+                    </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                    <Grid.Column width={6}>
+                        <a href='https://www.upcursor.com/' target='_blank' rel='noreferrer nofollow'>
+                        <Header as='h1' style={{marginBottom:0}}>
+                            UP Association of Computer Science Majors
+                        </Header>
+                        </a>
+                        <Header as='h2' style={{margin:0}}>
+                            (UP CURSOR)
+                        </Header>
+                        <p style={{ fontSize: '16px', marginTop: '0.20em'}}>January 2019 – Present</p>
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

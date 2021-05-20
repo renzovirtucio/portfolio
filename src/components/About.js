@@ -34,7 +34,7 @@ const Content = () => {
                         <Header as='h2'>
                             Overview
                         </Header>
-                        <p style={{ fontSize: (width < 768) ? '15px' : '17.5px' }}>Passionate <strong>3rd-Year Computer Science student</strong> with a wide range of leadership experience; eager to start his career in the Tech industry. In search of an internship where I can utilize and hone my skills in programming and my knowledge in the theoretical foundations of Computer Science.</p>
+                        <p style={{ fontSize: (width < 768) ? '15px' : '17.5px' }}>Passionate <strong>3rd-Year Computer Science student</strong> with a wide range of leadership experience; eager to start his career in the Tech industry. In search of an internship where I can utilize and hone my skills in programming, web development, and my knowledge in the theoretical foundations of Computer Science.</p>
                     </Grid.Column>
                     <Grid.Column width={((width < 768) ? 7 : 4)}>
                         <Image src={portrait} alt='Portrait' size='medium' centered />
@@ -75,7 +75,7 @@ const Content = () => {
                             <List.Item>
                                 <List.Content>
                                     <List.Header>Interests</List.Header>
-                                    Web Development, Sports, Video Games, Music, Travel, Languages  
+                                    Web Development, Software Engineering, Artificial Intelligence, Sports, Video Games, Foreign Languages  
                                 </List.Content>
                             </List.Item>
                         </List>
