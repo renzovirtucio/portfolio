@@ -74,6 +74,7 @@ const Home = () => {
     return(
         <div style={{ marginTop: (width < 768) ? '12em' : '19em'}}>
             <HomeHeader />
+            <div style={{marginBottom: '75px'}}></div>
         </div>
     )
 }

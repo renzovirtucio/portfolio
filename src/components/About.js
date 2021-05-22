@@ -113,7 +113,7 @@ const Content = () => {
 
 const About = () => {
     return (
-        <div>
+        <div className='mainComponent'>
             <Helmet>
                 <title>{ TITLE }</title>
             </Helmet>

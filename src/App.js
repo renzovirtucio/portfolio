@@ -1,4 +1,5 @@
 import MainMenu from './components/MainMenu'
+import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About'
 import Credentials from './components/Credentials'
@@ -10,7 +11,7 @@ const TITLE = 'Renzo Virtucio Portfolio'
 
 const App = () => {
     return (
-        <div>
+        <div className='page-container'>
             <Helmet>
                 <title>{ TITLE }</title>
             </Helmet>
@@ -26,12 +27,13 @@ const App = () => {
                     <Route path='/credentials'>
                         <Credentials />
                     </Route>
-                    {/* <Route path='/gallery'>
+                    <Route path='/gallery'>
                         <Gallery />
-                    </Route> */}
+                    </Route>
                 </Switch>
             </Router>
-            <div style={{marginTop: '200px'}}></div>
+            <div style={{marginBottom: '75px'}}></div>
+            <Footer />
         </div>
     )
 }
