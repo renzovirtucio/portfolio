@@ -147,7 +147,7 @@ const Projects = () => {
                 <Grid.Row>
                     <Grid.Column>
                         <Card centered fluid>
-                            <Carousel infiniteLoop={true} transitionTime={1000} interval={5000} showThumbs={false} showArrows={false} >
+                            <Carousel transitionTime={1000} showThumbs={false} showArrows={false} >
                                 <div>
                                     <img src={PASG_ScreenShot1} alt='PASG_ScreenShot1' />
                                 </div>
