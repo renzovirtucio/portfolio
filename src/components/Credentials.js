@@ -171,7 +171,7 @@ const Projects = () => {
                         <Card centered fluid>
                             <Image src={Chopsticks_ScreenShot} />
                             <Card.Content>
-                                <Card.Header><Header>Multiplayer Chopsticks Game</Header></Card.Header>
+                                <Card.Header><Header>Multiplayer Chopsticks Game <a href='https://github.com/renzovirtucio/chopsticks' target='_blank' rel='noreferrer nofollow'><Icon name='github' className='icon' /></a></Header></Card.Header>
                                 <Card.Meta>May 2019 – June 2019</Card.Meta>
                                 <Card.Description>An object-oriented program of the turn-based hand game which allows for multiplayer gameplay over a local area network.</Card.Description>
                             </Card.Content>
