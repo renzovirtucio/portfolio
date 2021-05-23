@@ -106,7 +106,7 @@ const Content = () => {
                             <List.Item>
                                 <List.Content>
                                     <List.Header>LinkedIn</List.Header>
-                                    <a href='linkedin.com/in/renzo-john-virtucio-091b87210' target='_blank' rel='noreferrer nofollow'>Renzo John Virtucio</a>
+                                    <a href='https://www.linkedin.com/in/renzo-john-virtucio-091b87210' target='_blank' rel='noreferrer nofollow'>Renzo John Virtucio</a>
                                 </List.Content>
                             </List.Item>
                             <List.Item>
