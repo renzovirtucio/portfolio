@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {
     Button,
-    Container, 
     Grid,
     Header,
     Transition,
@@ -17,7 +16,7 @@ class HiThere extends Component {
     render() {
         const { animation, duration, visible } = this.state
         return (
-            <div>
+            <div style={{marginTop: '15em'}}>
                 <Transition
                     animation={animation}
                     duration={duration}
@@ -30,7 +29,7 @@ class HiThere extends Component {
                         style={{
                             fontSize: '4em',
                             fontWeight: 'normal',
-                            marginBottom: 0,
+                            margin: 0,
                         }}
                     />
                 </Transition>
@@ -45,24 +44,22 @@ const HomeHeader = () => {
         window.scrollTo(0,0)
     }, [])
     return(
-        <Grid className='main-header'>
+        <Grid className='main-header' style={{marginBottom:'200px'}}>
             <Grid.Row>
-                <Grid.Column>
-                    <Container text textAlign='center'>
-                        <HiThere />
-                        <Header
-                            as='h3'
-                            content='Welcome to my portfolio website!'
-                            style={{
-                                fontSize: (width < 768) ? '1.5em' : '2.2em',
-                                fontWeight: 'normal',
-                                marginTop: (width < 768) ? '0.5em': '1em',
-                            }}
-                        />
-                        <Button primary size= {(width < 768)? 'big' : 'huge'} as={Link} to='/about'>
-                            About Me 
-                        </Button>
-                    </Container>
+                <Grid.Column textAlign='center'>
+                    <HiThere />
+                    <Header
+                        as='h3'
+                        content='Welcome to my portfolio website!'
+                        style={{
+                            fontSize: (width < 768) ? '1.5em' : '2.2em',
+                            fontWeight: 'normal',
+                            marginTop: (width < 768) ? '0.5em': '1em',
+                        }}
+                    />
+                    <Button primary size= {(width < 768)? 'big' : 'huge'} as={Link} to='/about'>
+                        About Me 
+                    </Button>
                 </Grid.Column>
             </Grid.Row>
         </Grid>
@@ -70,11 +67,9 @@ const HomeHeader = () => {
 }
 
 const Home = () => {
-    const { height, width } = useWindowDimensions()
     return(
-        <div style={{ marginTop: (width < 768) ? '12em' : '19em'}}>
+        <div className='mainComponent'>
             <HomeHeader />
-            <div style={{marginBottom: '75px'}}></div>
         </div>
     )
 }

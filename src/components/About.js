@@ -82,7 +82,7 @@ const Content = () => {
                     </Grid.Column>
                     <Grid.Column width={((width < 768) ? 7 : 5)}>
                         <Header>
-                            Contact me at
+                            Contact Information
                         </Header>
                         <List animated>
                             <List.Item>
@@ -101,6 +101,18 @@ const Content = () => {
                                 <List.Content>
                                     <List.Header>Location</List.Header>
                                     <a href='https://www.google.com/maps/place/Las+Pinas,+1747+Metro+Manila/' target='_blank' rel='noreferrer nofollow'>Las Piñas City, Metro Manila 1747</a>
+                                </List.Content>
+                            </List.Item>
+                            <List.Item>
+                                <List.Content>
+                                    <List.Header>LinkedIn</List.Header>
+                                    <a href='linkedin.com/in/renzo-john-virtucio-091b87210' target='_blank' rel='noreferrer nofollow'>Renzo John Virtucio</a>
+                                </List.Content>
+                            </List.Item>
+                            <List.Item>
+                                <List.Content>
+                                    <List.Header>GitHub</List.Header>
+                                    <a href='https://github.com/renzovirtucio' target='_blank' rel='noreferrer nofollow'>github.com/renzovirtucio</a>
                                 </List.Content>
                             </List.Item>
                         </List>

@@ -35,7 +35,6 @@ class DesktopContainer extends Component {
                             <MenuItem name='home' as={Link} to='/' style={{fontWeight: 'bold'}} />
                             <MenuItem name='about' as={Link} to='/about' style={{fontWeight: 'bold'}}/>
                             <MenuItem name='credentials' as={Link} to='/credentials' style={{fontWeight: 'bold'}}/>
-                            {/* <MenuItem name='gallery' as={Link} to='/gallery' style={{fontWeight: 'bold'}}/> */}
                         </Container>
                     </Menu>
                 </div>
@@ -66,7 +65,6 @@ class MobileContainer extends Component {
                                         <Dropdown.Item as={Link} to='/'>Home</Dropdown.Item>
                                         <Dropdown.Item as={Link} to='/about'>About</Dropdown.Item>
                                         <Dropdown.Item as={Link} to='/credentials'>Credentials</Dropdown.Item>
-                                        {/* <Dropdown.Item as={Link} to='/gallery'>Gallery</Dropdown.Item> */}
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </MenuItem>

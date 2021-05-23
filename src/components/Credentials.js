@@ -2,10 +2,13 @@ import { Card, Header, Divider, Label, List, Icon, Grid, Tab, Image } from 'sema
 import useWindowDimensions from './useWindowDimensions'
 import { Helmet } from 'react-helmet'
 import { useEffect } from 'react'
+import { Carousel } from 'react-responsive-carousel'
 
-import PASG_ScreenShot from '../assets/pasg.png' 
+import PASG_ScreenShot1 from '../assets/pasg.png' 
+import PASG_ScreenShot2 from '../assets/pasg-1.png' 
 import UP_CSI from '../assets/UP CSI_logo.png'
 import UP_CURSOR from '../assets/UP CURSOR_logo.png'
+import Chopsticks_ScreenShot from '../assets/chopsticks.png'
 
 const TITLE = 'Credentials | Renzo Virtucio'
 
@@ -144,9 +147,16 @@ const Projects = () => {
                 <Grid.Row>
                     <Grid.Column>
                         <Card centered fluid>
-                            <Image src={PASG_ScreenShot}/>
+                            <Carousel infiniteLoop={true} transitionTime={1000} interval={5000} showThumbs={false} showArrows={false} >
+                                <div>
+                                    <img src={PASG_ScreenShot1} alt='PASG_ScreenShot1' />
+                                </div>
+                                <div>
+                                    <img src={PASG_ScreenShot2} alt='PASG_ScreenShot2' />
+                                </div>
+                            </Carousel>
                             <Card.Content>
-                                <Card.Header><Header>Post-Apocalyptic Survival Game <a href='https://github.com/CS-192-S3-2020-2021-Group-2/Post-Apocalyptic-Survival-Game' target='_blank' rel='noreferrer nofollow'><Icon name='github' /></a></Header></Card.Header>
+                                <Card.Header><Header>Post-Apocalyptic Survival Game <a href='https://github.com/CS-192-S3-2020-2021-Group-2/Post-Apocalyptic-Survival-Game' target='_blank' rel='noreferrer nofollow'><Icon name='github' className='icon' /></a></Header></Card.Header>
                                 <Card.Meta>March 2021 – Present</Card.Meta>
                                 <Card.Description>A simple text-based game which allows the player to decide their own outcome by the choices they make.</Card.Description>
                             </Card.Content>
@@ -159,6 +169,7 @@ const Projects = () => {
                 <Grid.Row>
                     <Grid.Column>
                         <Card centered fluid>
+                            <Image src={Chopsticks_ScreenShot} />
                             <Card.Content>
                                 <Card.Header><Header>Multiplayer Chopsticks Game</Header></Card.Header>
                                 <Card.Meta>May 2019 – June 2019</Card.Meta>

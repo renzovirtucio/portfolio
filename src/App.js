@@ -3,7 +3,6 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import About from './components/About'
 import Credentials from './components/Credentials'
-import Gallery from './components/Gallery'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
@@ -26,9 +25,6 @@ const App = () => {
                     </Route>
                     <Route path='/credentials'>
                         <Credentials />
-                    </Route>
-                    <Route path='/gallery'>
-                        <Gallery />
                     </Route>
                 </Switch>
             </Router>
